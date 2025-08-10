@@ -1,7 +1,6 @@
 import express from "express";
 import { generateArticle, generateBlogTitle, generateImage, removeImageBackground, removeImageObject, resumeReview } from "../controllers/aiController.js";
 import { auth } from "../middlewares/auth.js";
-import { requireAuth } from "@clerk/express";   
 import { upload } from "../configs/multer.js";
 
 const aiRouter = express.Router();
